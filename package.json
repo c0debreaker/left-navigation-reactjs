@@ -1,7 +1,7 @@
 {
-  "name": "third-party-component-1",
-  "version": "1.0.3",
-  "description": "Third Party ReactJS Component ",
+  "name": "left-navigation",
+  "version": "1.0.4",
+  "description": "A Left Navigation Component written in ReactJS ",
   "main": "app/leftnavigation.jsx",
   "scripts": {
     "start": "webpack-dev-server",
