@@ -1,12 +1,21 @@
-import './main.css';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+let BoxComponent = (props) => {
 
-// var component = require('./component');
-// var app = document.createElement('div');
-// document.body.appendChild(app);
-// app.appendChild(component());
+const style = {
+  backgroundColor: '#673AB7',
+  color: 'lightblue',
+  padding: 15,
+  borderStyle: 'solid',
+  borderWidth: 2,
+  borderColor: 'blue',
+  width: 200,
+  ...props.style
+}
+
+return (
+  <div style={style}>Third party component 3</div>
+  )
+}
+
+export default BoxComponent;
