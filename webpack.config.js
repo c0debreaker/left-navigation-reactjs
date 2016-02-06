@@ -5,11 +5,10 @@
     const merge = require('webpack-merge');
     const TARGET = process.env.npm_lifecycle_event;
     const PATHS = {
-      app: path.join(__dirname, 'app'),
-      build: path.join(__dirname, 'build')
+      app: path.join(__dirname, 'app', 'app.jsx'),
+      build: path.join(__dirname, 'build'),
+      indexHtml: path.join(__dirname, 'app', 'template', 'index.html')
     };
-
-    console.log('**** TARGET', TARGET);
 
     process.env.BABEL_ENV = TARGET;
 
@@ -24,8 +23,8 @@
       },
       plugins: [
         new HtmlwebpackPlugin({
-          template: 'node_modules/html-webpack-template/index.html',
-          title: 'Kanban app',
+          template: PATHS.indexHtml,
+          title: 'Override 3rd Party Components',
           appMountId: 'app'
         }),
         new webpack.HotModuleReplacementPlugin()
