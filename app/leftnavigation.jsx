@@ -30,11 +30,11 @@ const primary = (props) => {
 const LeftNavigation = (props) => {
 
   let Menus = [
-    { text: 'Menu 1', icon: 'assignment'},
+    { text: 'Menu 1', icon: 'folder_open'},
     { text: 'Menu 2', icon: 'folder_open'},
-    { text: 'Menu 3', icon: 'find_in_page'},
-    { text: 'Menu 4', icon: 'settings'},
-    { text: 'Menu 5', icon: 'history'}
+    { text: 'Menu 3', icon: 'folder_open'},
+    { text: 'Menu 4', icon: 'folder_open'},
+    { text: 'Menu 5', icon: 'folder_open'}
   ];
 
   let ListStyles = {
