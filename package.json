@@ -1,6 +1,6 @@
 {
   "name": "third-party-component-1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Third Party ReactJS Component ",
   "main": "app/leftnavigation.jsx",
   "scripts": {

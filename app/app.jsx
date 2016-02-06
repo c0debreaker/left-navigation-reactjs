@@ -16,6 +16,8 @@ let ListStyles = {
   width: 200
 }
 
+ListStyles = undefined
+
 ReactDOM.render(
   <div>
     <div>

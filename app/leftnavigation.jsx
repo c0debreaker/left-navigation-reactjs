@@ -37,11 +37,17 @@ const LeftNavigation = (props) => {
     { text: 'Menu 5', icon: 'history'}
   ];
 
+  let ListStyles = {
+    backgroundColor: '#ffffff',
+    width: '100%'
+  }
+
   Menus = (props.Menus) ? props.Menus : Menus;
+  ListStyles = (props.ListStyles) ? props.ListStyles : ListStyles;
 
   let listItem = Menus.map((dataVal, i) => <ListItem style={{itemStyle, ...props.itemStyle}} key={i} primaryText={primary(dataVal)} onClick={() => onClick(dataVal.text)}/>);
   return (
-    <List style={props.ListStyles}>
+    <List style={ListStyles}>
       {listItem}
     </List>
     )
