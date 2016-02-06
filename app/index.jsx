@@ -13,8 +13,11 @@ const style = {
   ...props.style
 }
 
+let PrimaryText = 'Default button name';
+PrimaryText = (props.PrimaryText) ? props.PrimaryText : PrimaryText;
+
 return (
-  <div style={style}>Third party component 3</div>
+  <div style={style}>{PrimaryText}</div>
   )
 }
 
