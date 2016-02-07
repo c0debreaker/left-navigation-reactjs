@@ -1,6 +1,6 @@
 {
   "name": "left-navigation",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A Left Navigation Component written in ReactJS ",
   "main": "app/leftnavigation.jsx",
   "scripts": {

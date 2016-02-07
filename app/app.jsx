@@ -18,11 +18,17 @@ let ListStyles = {
 
 ListStyles = undefined
 
+let innerDivStyle = {
+  paddingLeft: 20,
+  paddingTop: 10,
+  paddingBottom: 7
+}
+
 ReactDOM.render(
   <div>
     <div>
       <h3>Let's override left navigation styles</h3>
-      <LeftNavigation Menus={Menus} ListStyles={ListStyles}/>
+      <LeftNavigation Menus={Menus} ListStyles={ListStyles} innerDivStyle={innerDivStyle}/>
     </div>
     <hr/>
     <div>

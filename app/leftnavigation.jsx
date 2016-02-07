@@ -45,7 +45,7 @@ const LeftNavigation = (props) => {
   Menus = (props.Menus) ? props.Menus : Menus;
   ListStyles = (props.ListStyles) ? props.ListStyles : ListStyles;
 
-  let listItem = Menus.map((dataVal, i) => <ListItem style={{itemStyle, ...props.itemStyle}} key={i} primaryText={primary(dataVal)} onClick={() => onClick(dataVal.text)}/>);
+  let listItem = Menus.map((dataVal, i) => <ListItem innerDivStyle={{...props.innerDivStyle}} style={{itemStyle, ...props.itemStyle}} key={i} primaryText={primary(dataVal)} onClick={() => onClick(dataVal.text)}/>);
   return (
     <List style={ListStyles}>
       {listItem}
